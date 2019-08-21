@@ -30,7 +30,7 @@ public class Feira {
             case 6:st= "Laranja";break;
             case 7:st= "Morango";break;
             case 8:st= "Tangerina";break;
-            default :st="Esta opção não existe!";
+            default :st="Esta opção não existe";
         }
     
     JOptionPane.showMessageDialog(null,st);
