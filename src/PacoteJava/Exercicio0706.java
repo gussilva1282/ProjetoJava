@@ -4,10 +4,12 @@ public class Exercicio0706 {
     public static void main(String[] args) {
         String aux = "";
     double salario = 0, salario1 = 0,aliquota = 0,desconto = 0;
-        
+        try{
         aux = JOptionPane.showInputDialog(null, "Informe o seu Salário: ");
         salario = Double.parseDouble(aux);
-        
+        }catch(NumberFormatException e){
+            JOptionPane.showMessageDialog(null,"Favor inserir somente números");
+        }
         
         if (salario <= 965.67){
             salario1 = salario - (salario * 8.0 / 100);
